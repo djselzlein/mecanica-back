@@ -37,7 +37,6 @@ public abstract class ControllerDefault<T extends Model, S extends ServiceDefaul
 		service.delete(id);
 	}
 
-	@CrossOrigin(origins = "http://localhost:3000")
 	@GetMapping("/")
 	public Collection<T> get() {
 		return service.findAll();
